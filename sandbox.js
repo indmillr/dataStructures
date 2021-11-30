@@ -61,3 +61,12 @@ function spreadOut() {
   return sentence;
 }
 console.log(spreadOut());
+
+// Check for an Element with indexOf()
+function quickCheck(arr, elem) {
+  if (arr.indexOf(elem) >= 0) {
+    return true;
+  }
+  false;
+}
+console.log(quickCheck(["squash", "onions", "shallots", "mushrooms"]));
