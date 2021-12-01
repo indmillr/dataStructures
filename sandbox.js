@@ -67,6 +67,51 @@ function quickCheck(arr, elem) {
   if (arr.indexOf(elem) >= 0) {
     return true;
   }
-  false;
+  return false;
 }
 console.log(quickCheck(["squash", "onions", "shallots", "mushrooms"]));
+
+// Iterate through an Array's items using a For Loop
+function filteredArray(arr, elem) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].indexOf(elem) == -1) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+
+console.log(
+  filteredArray(
+    [
+      [3, 2, 1],
+      [1, 6, 3],
+      [3, 13, 26],
+      [19, 3, 9],
+    ],
+    3,
+  ),
+);
+
+// Create multi-dimensional arrays
+let myNestedArray = [
+  "unshift",
+  [
+    "sneep",
+    1,
+    2,
+    3,
+    ["deep", "nested"],
+    [
+      ["deeper", "shift", 6, 7, 1000, "method"],
+      [
+        ["concat", false, true, "spread", "array"],
+        ["mutate", 1327.98, "splice", "slice", "push"],
+        ["iterate", 1.3849, 7, "8.4876", "arbitrary", "deepest"],
+      ],
+    ],
+  ],
+];
+
+// Add Key-Value Pairs to Objects
